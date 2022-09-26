@@ -1,0 +1,76 @@
+/* Переваги */
+// start
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.benefits__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.benefits__text {
+  color: var(--primery-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+
+.benefits {
+  display: flex;
+  list-style: none;
+}
+
+.benefits__list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.benefits__icon {
+  display: flex;
+}
+
+.benefits__group:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits__title {
+  margin-top: 0px;
+}
+
+/* Переваги */
+// end

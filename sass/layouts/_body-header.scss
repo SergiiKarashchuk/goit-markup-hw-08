@@ -1,0 +1,164 @@
+/* HEADER START */
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container__nav {
+  display: flex;
+}
+
+.container__nav,
+.contacts__list {
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__icon {
+  display: flex;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.container__logo-span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.container__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  min-width: 145px;
+  max-width: 170px;
+  margin-right: 93px;
+}
+
+.nav__link.curent {
+  font-family: "Roboto";
+  color: var(--accent-color);
+}
+
+.nav__link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+
+  transform: scale(1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transform: scale(1.1);
+  }
+}
+
+.contacts__link {
+  display: flex;
+  margin: 0;
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  fill: currentColor;
+
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transform: scale(1.1);
+  }
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Позиціонування та переходи */
+
+.nav__link.curent::after {
+  display: block;
+  position: absolute;
+  content: "";
+
+  width: 48px;
+  height: 4px;
+  bottom: -1px;
+  right: 0;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.nav__item {
+  position: relative;
+}
+
+/* Позиціонування та переходи */
+
+/* HEADER END */

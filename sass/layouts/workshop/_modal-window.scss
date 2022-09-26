@@ -1,0 +1,238 @@
+/* Модальне вікно start*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+
+  transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+}
+
+.modal {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cross {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+
+  align-items: center;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition-property: transform;
+  transition-duration: 650ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: var(--accent-color);
+    transform: rotate(180deg);
+  }
+}
+
+.register-form__group {
+  margin-left: auto;
+  margin-right: auto;
+  width: 448px;
+  margin-bottom: 20px;
+}
+
+.register-form__field {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin: 0;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 1500ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.register-form__items {
+  display: block;
+
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primery-text-color);
+}
+
+.register-form__title {
+  display: block;
+
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.register-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.register-form__field-for-icon {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.register-form__field:focus + .register-form__icon {
+  fill: var(--accent-color);
+}
+.register-form__field:focus {
+  outline: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.register-form__textarea:focus {
+  outline: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+}
+
+.register-form__textarea[placeholder] {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.register-form__textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 16px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.checkbox__link {
+  color: rgba(33, 150, 243, 1);
+}
+
+.checkbox__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+  margin-left: 4px;
+  user-select: none;
+}
+
+.checkbox__icon-no-checked {
+  opacity: 1;
+  fill: #212121;
+}
+
+.checkbox__input:hover + .checkbox__icons .checkbox__icon-no-checked {
+  fill: var(--accent-color);
+}
+.checkbox__input:focus + .checkbox__icons .checkbox__icon-no-checked {
+  fill: var(--accent-color);
+}
+
+.checkbox__input:checked + .checkbox__icons .checkbox__icon-checked {
+  opacity: 1;
+}
+
+.checkbox__input:checked + .checkbox__icons .checkbox__icon-no-checked {
+  opacity: 0;
+}
+
+.checkbox__icon-checked {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.btn-submit {
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  transition-property: transform, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #188ce8;
+}
+
+/* Модальне вікно end*/

@@ -1,0 +1,61 @@
+/* Послуги */
+
+.projects {
+  padding-bottom: 94px;
+}
+
+.project__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.project__list {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.project__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.project__img {
+  display: block;
+}
+
+.project__text {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: var(--hero-color);
+  background: rgba(47, 48, 58, 0.8);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.project__item {
+  position: relative;
+}
