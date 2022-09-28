@@ -333,22 +333,9 @@ header {
 .benefits {
   list-style: none;
 }
-
-.benefits__list {
-  padding: 0;
-  margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  list-style: none;
-}
-@media screen and (min-width: 768px) {
-  .benefits__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -10px;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    margin: 0;
   }
 }
 
@@ -372,9 +359,42 @@ header {
   }
 }
 
+.benefits__list {
+  padding: 0;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .benefits__group {
+    width: calc((100% - 20px) / 2);
     margin: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__group {
+    width: calc((100% - 240px) / 4);
+    margin: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -391,6 +411,11 @@ header {
 /* Послуги */
 .projects {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .projects {
+    display: none;
+  }
 }
 
 .project__title {
