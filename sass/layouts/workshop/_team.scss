@@ -2,8 +2,6 @@
 
 .section__heands {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .container__heands {
@@ -12,13 +10,32 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .heands__list {
-  display: flex;
   margin: 0px;
   padding: 0px;
-  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: -15px;
+  }
 }
 
 .heands__item {
@@ -26,6 +43,20 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .heands__h2 {
@@ -37,7 +68,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
