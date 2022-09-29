@@ -162,29 +162,58 @@
           <h2 class="project__title">Чим займаємося</h2>
           <ul class="project__list">
             <li class="project__item item1">
-              <img class="project__img"
-                src="./images/img-left.jpg"
-                alt="Людина працює на десктоп комп'ютері"
-                width="370"
-              />
+
+<img
+  srcset="./images/project/project_lg-@1x.jpg 1x, ./images/project/project_lg-@2x.jpg 2x"
+  src="./images/project/project_lg-@1x.jpg"
+  alt="Десктопні додатки"
+  width="370"
+  height="294"
+/>
+              <!-- <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/project/project_lg-@1x.webp 1x,
+                    ./images/project/project_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/project/project_lg-@1x.jpg 1x,
+                    ./images/project/project_lg-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+              </picture> -->
+              
+
               <p class="project__text">Десктопні додатки</p>
 
             </li>
             <li class="project__item item2">
-              <img class="project__img"
-                src="./images/img-right.jpg"
-                alt="Людина працює на планшеті"
-                width="370"
-              />
+
+              <img
+  srcset="./images/project/project_lg-@1x-1.jpg 1x, ./images/project/project_lg-@2x-1.jpg 2x"
+  src="./images/project/project_lg-@1x-1.jpg"
+  alt="Десктопні додатки"
+  width="370"
+  height="294"
+/>
               <p class="project__text">Мобільні додатки</p>
 
             </li>
             <li class="project__item item3">
-              <img class="project__img"
-                src="./images/img-center.jpg"
-                alt="Людина працює на телефоні"
-                width="370"
-              />
+
+              <img
+              srcset="./images/project/project_lg-@1x-2.jpg 1x, ./images/project/project_lg-@2x-2.jpg 2x"
+              src="./images/project/project_lg-@1x-2.jpg"
+              alt="Десктопні додатки"
+              width="370"
+              height="294"
+            />
               <p class="project__text">Дизайнерські рішення</p>
 
             </li>
@@ -200,7 +229,50 @@
           <h2 class="heands__h2">Наша команда</h2>
           <ul class="heands__list list">
             <li class="heands__item">
-              <img src="./images/igor.jpg" alt="Ігор" width="270" />
+              
+              <picture>
+
+                <!-- Desktop screen -->
+
+<source
+  media="(min-width: 1200px)"
+  srcset="
+  ./images/team/imgteam_lg-@1x.jpg    1x,
+  ./images/team/imgteam_lg-@2x.jpg 2x
+  "
+  type="image/jpg"
+/>
+<!-- Tablet screen -->
+
+<source
+  media="(min-width: 768px)"
+  srcset="
+  ./images/team/imgteam_md-@1x.jpg    1x,
+  ./images/team/imgteam_md-@2x.jpg 2x
+  "
+  type="image/jpg"
+/>
+
+<!-- Mobile screen -->
+
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/imgteam_sm-@1x.jpg    1x,
+      ./images/team/imgteam_sm-@2x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/team/imgteam_sm-@1x.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
+              
               <div class="heands__group">
                 <h3 class="heands__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="heands__position">Product Designer</p>
@@ -239,7 +311,50 @@
 
 
             <li class="heands__item">   
-              <img src="./images/olga.jpg" alt="Ольга" width="270" />
+              
+              <picture>
+
+                <!-- Desktop screen -->
+
+<source
+  media="(min-width: 1200px)"
+  srcset="
+  ./images/team/imgteam_lg-@1x-1.jpg    1x,
+  ./images/team/imgteam_lg-@2x-1.jpg 2x
+  "
+  type="image/jpg"
+/>
+<!-- Tablet screen -->
+
+<source
+  media="(min-width: 768px)"
+  srcset="
+  ./images/team/imgteam_md-@1x-1.jpg    1x,
+  ./images/team/imgteam_md-@2x-1.jpg 2x
+  "
+  type="image/jpg"
+/>
+
+<!-- Mobile screen -->
+
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/imgteam_sm-@1x-1.jpg    1x,
+      ./images/team/imgteam_sm-@2x-1.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/team/imgteam_sm-@1x-1.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>  
+              
               <div class="heands__group">
                 <h3 class="heands__name">Ольга Рєпіна</h3>
                 <p lang="en" class="heands__position">Frontend Developer</p>
@@ -278,7 +393,50 @@
               
               
               <li class="heands__item">  
-              <img src="./images/mikola.jpg" alt="Микола" width="270" />
+
+                <picture>
+
+                  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+    ./images/team/imgteam_lg-@1x-2.jpg    1x,
+    ./images/team/imgteam_lg-@2x-2.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+    ./images/team/imgteam_md-@1x-2.jpg    1x,
+    ./images/team/imgteam_md-@2x-2.jpg 2x
+    "
+    type="image/jpg"
+  />
+  
+  <!-- Mobile screen -->
+  
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/team/imgteam_sm-@1x-2.jpg    1x,
+        ./images/team/imgteam_sm-@2x-2.jpg 2x
+      "
+      type="image/jpg"
+    />
+    <img
+      class="card-img"
+      src="./images/team/imgteam_sm-@1x-2.jpg"
+      alt="Ноутбук"
+      width="450"
+      height="294"
+      loading="lazy"
+    />
+  </picture>  
+
               <div class="heands__group">
                 <h3 class="heands__name">Микола Тарасов</h3>
                 <p lang="en" class="heands__position">Marketing</p>
@@ -317,7 +475,50 @@
               
               
               <li class="heands__item">  
-              <img src="./images/mihaylo.jpg" alt="Михайло" width="270" />
+
+                <picture>
+
+                  <!-- Desktop screen -->
+  
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+    ./images/team/imgteam_lg-@1x-3.jpg    1x,
+    ./images/team/imgteam_lg-@2x-3.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  
+  <source
+    media="(min-width: 768px)"
+    srcset="
+    ./images/team/imgteam_md-@1x-3.jpg    1x,
+    ./images/team/imgteam_md-@2x-3.jpg 2x
+    "
+    type="image/jpg"
+  />
+  
+  <!-- Mobile screen -->
+  
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/team/imgteam_sm-@1x-3.jpg    1x,
+        ./images/team/imgteam_sm-@2x-3.jpg 2x
+      "
+      type="image/jpg"
+    />
+    <img
+      class="card-img"
+      src="./images/team/imgteam_sm-@1x-3.jpg"
+      alt="Ноутбук"
+      width="450"
+      height="294"
+      loading="lazy"
+    />
+  </picture>    
+
               <div class="heands__group">
                 <h3 class="heands__name">Михайло Єрмаков</h3>
                 <p lang="en" class="heands__position">UI Designer</p>
