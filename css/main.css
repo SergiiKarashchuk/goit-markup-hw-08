@@ -403,8 +403,8 @@ header {
   -webkit-transition-timing-function: var(--cubic-bezier);
           transition-timing-function: var(--cubic-bezier);
 }
-.mobile-nav__link:focus {
-  cursor: pointer;
+
+.mobile-nav__link.сurent {
   color: var(--accent-color);
 }
 

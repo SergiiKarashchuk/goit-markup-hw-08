@@ -76,10 +76,14 @@
   transition-duration: 300ms;
   transition-timing-function: var(--cubic-bezier);
 
-  &:focus {
-    cursor: pointer;
-    color: var(--accent-color);
-  }
+  // &:focus {
+  //   cursor: pointer;
+  //   color: var(--accent-color);
+  // }
+}
+
+.mobile-nav__link.сurent {
+  color: var(--accent-color);
 }
 
 .mobile-contacts__tel {
