@@ -44,8 +44,18 @@ header {
   align-items: center;
 }
 
+// .contacts__list {
+//   @media screen and (max-width: 768px) {
+//     display: none;
+//   }
+// }
+
 .nav__list {
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .list {
@@ -55,12 +65,34 @@ header {
 }
 
 .contacts {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .contacts__item {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__icon {
@@ -81,6 +113,21 @@ header {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .container__logo {
@@ -95,7 +142,28 @@ header {
 
   min-width: 145px;
   max-width: 170px;
-  margin-right: 93px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .nav__link.curent {
@@ -135,8 +203,6 @@ header {
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
   fill: currentColor;
 
   transition-property: color, transform;
@@ -155,7 +221,9 @@ header {
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 /* Позиціонування та переходи */
