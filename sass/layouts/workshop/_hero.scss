@@ -2,7 +2,7 @@
 // start
 
 .hero {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
