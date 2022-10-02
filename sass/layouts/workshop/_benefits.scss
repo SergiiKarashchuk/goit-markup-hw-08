@@ -24,6 +24,10 @@
   margin-top: 0px;
   margin-bottom: 10px;
   text-align: center;
+
+  @media screen and (min-width: 767px) {
+    text-align: start;
+  }
 }
 
 .benefits__text {
@@ -91,10 +95,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-}
-
-.benefits__title {
-  margin-top: 0px;
 }
 
 /* Переваги */
