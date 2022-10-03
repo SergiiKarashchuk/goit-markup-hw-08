@@ -22,7 +22,7 @@
   background-size: cover;
 
   // Mobile screen
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -40,7 +40,7 @@
         ),
         url(../images/hero/hero_sm-@2x.jpg);
 
-      max-width: 767px;
+      max-width: 480px;
       height: 400px;
     }
   }
@@ -65,7 +65,7 @@
         url(../images/hero/hero_md-@2x.jpg);
     }
 
-    max-width: 1199px;
+    max-width: 768px;
     height: 400px;
   }
 

@@ -226,7 +226,7 @@ header {
 
 /* Позиціонування та переходи */
 
-.nav__link.curent::after {
+.nav__link.curent:after {
   display: block;
   position: absolute;
   content: "";
